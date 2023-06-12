@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo List</title>
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="styles/11x-todo-list.css">
+</head>
+<body>
+
+  <div class="whole-todoList">
+    <p class="main-heading">Todo List</p>
+    <!-- saves in the local storage -->
+    <div class="todo-input-grid">
+      <input placeholder="Todo name"                class="js-name-input name-input">
+      <input class="js-date-input date-input" type="date">
+      <button onclick="
+        addTodo();
+      " class="add-todo-button">Add</button>
+    </div>
+    <div  class="js-todo-list todo-grid"></div>
+
+  </div>
+  <script src="scripts/11x-todo-list.js"></script>
+</body>
+</html>
